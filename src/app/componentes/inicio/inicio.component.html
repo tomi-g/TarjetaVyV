@@ -1,0 +1,143 @@
+<div class="parallax background-inicio">
+</div>
+<section class="portada parallax-portada d-flex justify-content-center align-items-center">
+    <div class="logo-portada fade-in">
+        <img src="assets/nombres.png">
+        <div class="scroll-down"></div>
+    </div>
+</section>
+<section class="cuenta-regresiva">
+    <div class="container">
+        <div class="texto-cuenta" *ngIf="!(month == 0 && day == 0 && hours == 0 && minutes == 0)">
+            <h1>Faltan</h1>
+            <div class="time-countdown">
+                <ul>
+                    <li class="count-bg-one radius"><span id="days" class="numeros-contador">{{month}}</span>Meses</li>
+                    <li class="count-bg-one radius"><span id="days" class="numeros-contador">{{day}}</span>Dias</li>
+                    <li class="count-bg-two radius"><span id="hours" class="numeros-contador">{{hours}}</span>Horas</li>
+                    <li class="count-bg-three radius"><span id="minutes"
+                            class="numeros-contador">{{minutes}}</span>Minutos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="texto-cuenta" *ngIf="month == 0 && day == 0 && hours == 0 && minutes == 0">
+            <h1>¡Llegó el gran día!</h1>
+            <br>
+        </div>
+    </div>
+</section>
+<section class="ceremonia" id="ceremonia">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 columnas">
+                <img src="assets/iglesia.png" alt="" class="icon">
+                <h4>Ceremonia</h4>
+                <p>La ceremonia se realizará el 7 de Octubre a las 19:00 horas en la Iglesia del Sagrado Corazón de Jesús. Tocá el botón de abajo para recibir las indicaciones para llegar.</p>
+                <a target="_blank" href="https://goo.gl/maps/wKvFUaguknfjBMMt7" class="btn">UBICACIÓN DE LA
+                    CEREMONIA</a>
+            </div>
+            <div class="col-md-6 columnas">
+                <img src="assets/salud.png" alt="" class="icon">
+                <h4>Fiesta</h4>
+                <p>Después de la ceremonia en la iglesia, tendremos en Complejo El Zorzal, La Granja, la ceremonia civil y nuestro festejo. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos</p>
+                <a target="_blank" href="https://goo.gl/maps/pHFBdgTgEcds2sqt9" class="btn">UBICACIÓN DE LA FIESTA</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="carousel-fotos">
+    <div class="container">
+        <h4>
+            NOSOTROS
+            <br>
+            ❤
+        </h4>
+        <div class="row">
+            <div class="col-6 col-md-4 foto-galeria">
+                <img class="img-fluid" src="assets/galeria/1.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-4 foto-galeria">
+                <img class="img-fluid" src="assets/galeria/2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-4 foto-galeria">
+                <img class="img-fluid" src="assets/galeria/3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="regalos" id="regalos">
+    <div class="container">
+        <img src="assets/gift.png" alt="" class="icon">
+        <p>¡El mejor regalo es tu presencia!</p>
+        <p>Pero si deseás hacernos un regalo podés ayudarnos con la luna de miel...</p>
+        <a class="btn btn-primary boton-enlace" data-bs-toggle="modal" data-bs-target="#exampleModal2"> Ver datos
+            bancarios</a>
+    </div>
+</section>
+<section class="confirmar-asistencia" id="asistencia">
+    <div class="container" >
+        <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
+        <p>Es importante para nosotros saber si vamos a poder contar con tu presencia en este día especial!</p>
+        <p>Te comentamos que para ello <span style="font-weight: bold;">la tarjeta tiene un valor de $2500</span>,
+            el cual podrás abonar haciendo una transferencia a nuestro CBU</p>
+        <p>ALIAS:
+            <br>CBU: 
+        </p>
+        <br>
+        <p>
+            Por razones de seguridad en el lugar, nuestra boda será <br>
+            <span style="font-weight: 600;"> SÓLO PARA ADULTOS. </span>
+        </p>
+        <p>Además, te contamos también que es necesario que
+            puedas
+            completar el siguiente formulario para que podamos saber que estas
+            anotado
+        </p>
+        <a href="https://forms.gle/156pKgfFAjYLaofp8" target="_blank" rel="noopener noreferrer" class="btn btn-primary boton-confirmacion">Ir al formulario</a>
+    </div>
+</section>
+<section class="dress-code">
+    <div class="container" id="vestimenta">
+        <h3>DRESS CODE</h3>
+        <p>Formal elegante</p>
+    </div>
+</section>
+<section class="parallax-instagram instagram d-flex justify-content-center align-items-center" id="instagram">
+    <div class="contenido">
+      <img src="assets/instagram.png" alt="" class="icon">
+      <br>
+      <span class="hashtag">#ValeX2</span>
+      <p>
+        ¡Preparate para nuestro casamiento!<br>
+        Etiquetanos en Instagram con nuestro #hashtag en tus fotos o videos.
+      </p>
+  
+      <a target="_blank" href="https://www.instagram.com/explore/tags/luciayjoaquin4m/" class="btn">Ver instagram</a>
+    </div>
+</section>
+<footer style="background-color: #7f9e79;">
+    <div class="text-center p-4" >
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="text-uppercase enlaces" href="#ceremonia">CEREMONIA Y FIESTA</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="text-uppercase enlaces" href="#regalos">REGALOS</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="text-uppercase enlaces" href="#asistencia">CONFIRMACIÓN DE ASISTENCIA</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a class="text-uppercase enlaces" href="#vestimenta">VESTIMENTA</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
